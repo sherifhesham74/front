@@ -10,8 +10,8 @@ export default function CarDetails() {
   const [usedCars, setusedCars] = useState([]);
   const [allCars, setallCars] = useState([]);
 
-  const newCarsURL = "http://localhost:5000/newcars";
-  const usedCarsURL = "http://localhost:5000/usedcars";
+  const newCarsURL = "https://kalaks-apii.onrender.com/newcars";
+  const usedCarsURL = "https://kalaks-apii.onrender.com/usedcars";
   // let shopUrl = "http://localhost:5000/carsshops";
   let { id } = useParams();
 
@@ -88,7 +88,7 @@ export default function CarDetails() {
       </div>
       <div className="row main-details">
         <div className="main col-7 no">
-          <img src={`http://localhost:5000/${wordData}`} className="p" />
+          <img src={`https://kalaks-apii.onrender.com/${wordData}`} className="p" />
           <div className="flex_row">
             {imgs.map((data, i) => {
               return (
@@ -124,7 +124,7 @@ export default function CarDetails() {
                 </div>
                 <div class="card back-face">
                   <img
-                    src={`http://localhost:5000/${car.owner?.image}`}
+                    src={`https://kalaks-apii.onrender.com/${car.owner?.image}`}
                     alt="Flip Card"
                     onClick={() => shopClick(car.owner?._id)}
                     className="klo"
