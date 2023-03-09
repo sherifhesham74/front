@@ -19,7 +19,7 @@ const Navs = () => {
     removeAuthToken();
     window.location.reload();
   }
-  let baseURL = "http://localhost:5000/cart";
+  let baseURL = "https://kalaks-apii.onrender.com/cart";
   let [mycart, setmycart] = useState([]);
   useEffect(() => {
     axios
