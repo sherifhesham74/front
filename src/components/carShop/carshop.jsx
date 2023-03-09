@@ -6,8 +6,8 @@ import axios from "axios";
 export default function Carshop() {
   let { id } = useParams();
   // let { name } = useParams();
-  let baseUrl = "http://localhost:5000/carsshops";
-  let baseUrl1 = "http://localhost:5000/newcars";
+  let baseUrl = "https://kalaks-apii.onrender.com/carsshops";
+  let baseUrl1 = "https://kalaks-apii.onrender.com/newcars";
   let [shop, setshop] = useState([]);
   let [cars, setcars] = useState([]);
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function Carshop() {
                     <div class="rent-item1 mb-4">
                       <img
                         class="img-fluid mb-4"
-                        src={`http://localhost:5000/${card?.image[0]}`}
+                        src={`https://kalaks-apii.onrender.com/${card?.image[0]}`}
                         alt=""
                       />
                       <h4 class="text-uppercase mb-4 mt-3">{`${card?.name} ${card?.model}`}</h4>
