@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export function Cards() {
-  let baseURL = "http://localhost:5000/newcars";
+  let baseURL = "https://kalaks-apii.onrender.com/newcars";
   let [cars, setcars] = useState([]);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export function Cards() {
                 <div class="rent-item1 mb-4">
                   <img
                     class="img-fluid mb-4"
-                    src={`http://localhost:5000/${card.image[0]}`}
+                    src={`https://kalaks-apii.onrender.com/${card.image[0]}`}
                     alt=""
                   />
                   <h4 class="text-uppercase mb-3 mt-3">{`${card.name} ${card.model}`}</h4>
