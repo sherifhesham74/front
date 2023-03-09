@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap";
 import "../../css/cart/cart.css";
 
 export function Cart() {
-  let baseURL = "http://localhost:5000/cart";
+  let baseURL = "https://kalaks-apii.onrender.com/cart";
 
   let [mycart, setmycart] = useState([]);
   let [usedcars, setUsedcars] = useState([]);
@@ -83,7 +83,7 @@ export function Cart() {
                   <div className="d-flex">
                     <div className="mx-3 ">
                       <img
-                        src={`http://localhost:5000/${mycart.image}`}
+                        src={`https://kalaks-apii.onrender.com/${mycart.image}`}
                         alt=""
                       />
                     </div>
@@ -121,7 +121,7 @@ export function Cart() {
                     <div className="d-flex align-items-center justify-content-between mb-2 ">
                       <div className="d-flex align-items-center  ">
                         <img
-                          src={`http://localhost:5000/${mycart.image}`}
+                          src={`https://kalaks-apii.onrender.com/${mycart.image}`}
                           alt=""
                           className="mr-3"
                         />
