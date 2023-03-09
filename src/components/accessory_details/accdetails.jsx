@@ -5,8 +5,8 @@ import { useParams } from "react-router-dom";
 import "./det.css";
 
 export default function Accdetails() {
-  let baseURL = "http://localhost:5000/accessories";
-  let cartURL = "http://localhost:5000/cart";
+  let baseURL = "https://kalaks-apii.onrender.com/accessories";
+  let cartURL = "https://kalaks-apii.onrender.com/cart";
   const { id } = useParams();
   const [accessory, setaccessory] = useState({});
   const [mycart, setmycart] = useState({});
@@ -42,7 +42,7 @@ export default function Accdetails() {
       <div className="row acc-row-container">
         <div className="main col-5 no acc-image-1">
           <img
-            src={`http://localhost:5000/${accessory?.image}`}
+            src={`https://kalaks-apii.onrender.com/${accessory?.image}`}
             className="p"
           />
         </div>
