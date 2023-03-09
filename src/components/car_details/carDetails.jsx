@@ -95,7 +95,7 @@ export default function CarDetails() {
                 <div className="thumbnail" key={i}>
                   <img
                     id="po"
-                    src={`http://localhost:5000/${data}`}
+                    src={`https://kalaks-apii.onrender.com/${data}`}
                     onClick={() => handleClick(i)}
                   />
                 </div>
@@ -118,7 +118,7 @@ export default function CarDetails() {
                 <div class="card cont-imgs front-face">
                   <img
                     class="relatedimg"
-                    src={`http://localhost:5000/${car?.image[0]}`}
+                    src={`https://kalaks-apii.onrender.com/${car?.image[0]}`}
                     alt="Flip Card"
                   />
                 </div>
