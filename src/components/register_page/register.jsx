@@ -7,7 +7,7 @@ export default function Register() {
   const [errorValue, seterrorValue] = useState("");
   const navigate = useNavigate();
 
-  const baseURL = "http://localhost:5000/users/signup";
+  const baseURL = "https://kalaks-apii.onrender.com/users/signup";
   const [formValue, setformValue] = useState({
     fname: "",
     lname: "",
