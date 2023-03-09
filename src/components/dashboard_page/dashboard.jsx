@@ -9,8 +9,8 @@ export default function Dashboard() {
   const [image, setImage] = useState("");
   let { id } = useParams();
 
-  let baseUrl = "http://localhost:5000/newcars";
-  let baseUrl1 = "http://localhost:5000/usedcars";
+  let baseUrl = "https://kalaks-apii.onrender.com/newcars";
+  let baseUrl1 = "https://kalaks-apii.onrender.com/usedcars";
   let navigate = useNavigate();
   let formData = new FormData();
   const [formValue, setFormValue] = useState({
