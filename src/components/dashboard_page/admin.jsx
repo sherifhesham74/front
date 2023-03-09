@@ -6,8 +6,8 @@ import { NavLink, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export function Admin() {
-  let baseURL = "http://localhost:5000/newcars";
-  let baseURL1 = "http://localhost:5000/usedcars";
+  let baseURL = "https://kalaks-apii.onrender.com//newcars";
+  let baseURL1 = "https://kalaks-apii.onrender.com//usedcars";
   let [newcars, setnewcars] = useState([]);
   let [usedcars, setusedcars] = useState([]);
   let [cars, setcars] = useState([]);
@@ -140,7 +140,7 @@ export function Admin() {
                     return (
                       <tr class="center-align car-row">
                         <td className="table-info">
-                          <img src={`http://localhost:5000/${car.image}`} />
+                          <img src={`https://kalaks-apii.onrender.com/${car.image}`} />
                         </td>
                         <td className="table-info text-center">
                           {" "}
