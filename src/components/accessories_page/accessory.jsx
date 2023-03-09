@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Container } from "reactstrap";
 
 export default function Accessory() {
-  let baseURL = "http://localhost:5000/accessories";
+  let baseURL = "https://kalaks-apii.onrender.com/accessories";
   let [accessories, setaccessories] = useState([]);
   useEffect(() => {
     axios
@@ -46,7 +46,7 @@ export default function Accessory() {
                 <div class="rent-item1 mb-4">
                   <img
                     class="img-fluid mb-4 acc-image-card"
-                    src={`http://localhost:5000/${card.image}`}
+                    src={`https://kalaks-apii.onrender.com/${card.image}`}
                     alt=""
                   />
                   <h4 class="text-uppercase mb-4 mt-4 acc-name">{`${card.name}`}</h4>
