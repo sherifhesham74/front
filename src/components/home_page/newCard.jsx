@@ -3,7 +3,7 @@ import "../../css/newCard.css";
 import axios from "axios";
 
 export function Cards() {
-  let baseURL = "http://localhost:5000/newcars";
+  let baseURL = "https://kalaks-apii.onrender.com/newcars";
   let [cars, setcars] = useState([]);
   useEffect(() => {
     axios
