@@ -4,8 +4,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export default function CarCards() {
-  let baseURL1 = "http://localhost:5000/newcars";
-  let baseURL2 = "http://localhost:5000/usedcars";
+  let baseURL1 = "https://kalaks-apii.onrender.com/newcars";
+  let baseURL2 = "https://kalaks-apii.onrender.com/usedcars";
   let [cars, setcars] = useState([]);
   let [newcars, setNewcars] = useState([]);
   let [usedcars, setUsedcars] = useState([]);
@@ -79,7 +79,7 @@ export default function CarCards() {
                 <div class="rent-item mb-4">
                   <img
                     class="img-fluid mb-4"
-                    src={`http://localhost:5000/${card.image[0]}`}
+                    src={`https://kalaks-apii.onrender.com/${card.image[0]}`}
                     alt=""
                   />
                   <h4 class="text-uppercase mb-4 mt-3">{`${card.name} ${card.model}`}</h4>
