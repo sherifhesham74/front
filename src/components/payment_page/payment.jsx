@@ -90,7 +90,7 @@ import { useEffect } from "react";
 
 export default function Payment() {
   let navag = useNavigate();
-  let baseURL = "http://localhost:5000/cart";
+  let baseURL = "https://kalaks-apii.onrender.com/cart";
   let [mycart, setmycart] = useState([]);
   const stripe = useStripe();
   const element = useElements();
@@ -146,7 +146,7 @@ export default function Payment() {
     };
 
     try {
-      const paymentIntent = await axios.post("http://localhost:5000/payments", {
+      const paymentIntent = await axios.post("https://kalaks-apii.onrender.com/payments", {
         amount: total,
       });
 
