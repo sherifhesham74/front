@@ -6,8 +6,8 @@ import { NavLink, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export function Admin() {
-  let baseURL = "https://kalaks-apii.onrender.com//newcars";
-  let baseURL1 = "https://kalaks-apii.onrender.com//usedcars";
+  let baseURL = "https://kalaks-apii.onrender.com/newcars";
+  let baseURL1 = "https://kalaks-apii.onrender.com/usedcars";
   let [newcars, setnewcars] = useState([]);
   let [usedcars, setusedcars] = useState([]);
   let [cars, setcars] = useState([]);
