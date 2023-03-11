@@ -17,7 +17,7 @@ import { Admin } from "./components/dashboard_page/admin";
 import LoginCarsShop from "./components/login_page/login_cars_shop";
 import Accessory from "./components/accessories_page/accessory";
 import Accdetails from "./components/accessory_details/accdetails";
-import { Cart } from "./components/cart/cart";
+
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
@@ -51,7 +51,6 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/:id" element={<Dashboard />} />
         <Route path="/admin/:id" element={<Admin />} />
-        <Route path="/mycart" element={<Cart />} />
         <Route path="/*" element={<Notfound />} />
       </Routes>
       <Footer></Footer>
