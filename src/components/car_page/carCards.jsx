@@ -4,8 +4,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export default function CarCards() {
-  let baseURL1 = "https://kalaks-apii.onrender.com/newcars";
-  let baseURL2 = "https://kalaks-apii.onrender.com/usedcars";
+  let baseURL1 = "http://kalaks-apii.onrender.com/newcars";
+  let baseURL2 = "http://kalaks-apii.onrender.com/usedcars";
   let [cars, setcars] = useState([]);
   let [newcars, setNewcars] = useState([]);
   let [usedcars, setUsedcars] = useState([]);
