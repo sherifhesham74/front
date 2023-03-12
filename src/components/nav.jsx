@@ -19,18 +19,18 @@ const Navs = () => {
     removeAuthToken();
     window.location.reload();
   }
-  let baseURL = "https://kalaks-apii.onrender.com/cart";
-  let [mycart, setmycart] = useState([]);
-  useEffect(() => {
-    axios
-      .get(baseURL)
-      .then((response) => {
-        setmycart(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+//   let baseURL = "https://kalaks-apii.onrender.com/cart";
+//   let [mycart, setmycart] = useState([]);
+//   useEffect(() => {
+//     axios
+//       .get(baseURL)
+//       .then((response) => {
+//         setmycart(response.data);
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   }, []);
   return (
     <Navbar bg="light" expand="lg" sticky="top" fixed="top">
       <Container>
