@@ -20,7 +20,7 @@ const Navs = () => {
     window.location.reload();
   }
 //   let baseURL = "https://kalaks-apii.onrender.com/cart";
-//   let [mycart, setmycart] = useState([]);
+  let [mycart, setmycart] = useState([]);
 //   useEffect(() => {
 //     axios
 //       .get(baseURL)
